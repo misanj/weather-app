@@ -13,6 +13,7 @@ h1{
 
 li {
     list-style: none;
+    text-transform: capitalize;
     margin: 0;
     padding: 0;
     color: rgb(135,135, 135);
