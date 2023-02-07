@@ -74,3 +74,24 @@ ul {
   color:rgb(33,33, 33);
 }
 
+.weather-forcast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forcast-date {
+  font-size: 16px;
+  color:#878787;
+}
+
+.weather-forcast-temp {
+  font-size: 13px;
+}
+
+.weather-forcast-temp-max {
+  color: rgb(33,33, 33);
+}
+
+.weather-forcast-temp-min {
+ color: #878787;
+}
