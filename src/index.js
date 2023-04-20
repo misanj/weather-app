@@ -87,6 +87,43 @@ function displayTemperature(response) {
       let celsiusConversionEle = ((fahrenheitTempEle - 32) * 5) / 9;
       celTemprature.innerHTML = Math.round(celsiusConversionEle);
     }
+
+  
+
+    function displayWeatherForecast() {
+      let weatherForecastElement = document.querySelector("#forecast")
+
+      let forcastHTML = `<div class="row">`;
+      let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+      days.forEach(function (day) {
+        forcastHTML =
+          forcastHTML +
+          `
+            <div class="col-2">
+              <div class="weather-forcast-date days">
+                ${day}
+              </div>
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png" 
+                alt="img" 
+                width="36"
+              />
+              <div class="weather-forcast-temp">
+                <span class="weather-forcast-temp-max">
+                  20°
+                </span> 
+                <span class="weather-forcast-temp-min">
+                  18°
+                </span>
+              </div>
+            </div>
+          `;
+      });
+      forcastHTML = forcastHTML +`</div>`;
+      weatherForecastElement.innerHTML = forcastHTML;
+    }
+
+    search("Lagos");
+    displayWeatherForecast();
     
     let celsiusTemp = null;
 
