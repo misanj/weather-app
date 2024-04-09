@@ -113,16 +113,13 @@ function displayTemperature(response) {
       forcast.forEach(function (forcastDay, index) {
         if(index < 6) {
           forcastHTML =
-          forcastHTML +
-          `
+            forcastHTML +
+            `
           <div class="col-2">
           <div class="weather-forcast-date days">
           ${formatDay(forcastDay.time)}
           </div>
-          <img src= ${forcastDay.condition.icon_url}
-          alt="img" 
-          width="36"
-          />
+          <img src= ${forcastDay.condition.icon_url} alt="img" class="weather-forcast-icon" />
           <div class="weather-forcast-temp">
           <span class="weather-forcast-temp-max">
           ${Math.round(forcastDay.temperature.maximum)}°
