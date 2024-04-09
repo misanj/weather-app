@@ -1,8 +1,9 @@
 # Developing
 Here's a brief intro about what a developer must do in order to start developing the project further:
-
+```
 git clone https://github.com/misanj/weather-app.git
 cd weather-app
+```
 Navigate to the source folder to start coding!
 
 ## Building
